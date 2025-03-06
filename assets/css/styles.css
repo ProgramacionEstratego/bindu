@@ -29,6 +29,17 @@ p{
     object-fit: cover; /* Ajusta el video al tamaño de la ventana */
     z-index: -1; /* Detrás de todo el contenido */
 }
+.video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover; /* Esto es clave para cubrir */
+        }
 
 header{
     padding-top: .5rem;
