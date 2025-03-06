@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Secundaria;
+}
+p{
+    margin:0rem;
+}
+
+@font-face {
+    font-family: 'Principal'; /* Nombre que tú le quieras poner */
+    src: url('../fonts/SAEuphoria.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Secundaria'; /* Nombre que tú le quieras poner */
+    src: url('../fonts/1430-font.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ajusta el video al tamaño de la ventana */
+    z-index: -1; /* Detrás de todo el contenido */
+}
+
+header{
+    padding-top: .5rem;
+}
+header .navbar .navbar-brand img{
+    width: 20%;
+    height: auto;
+}
+
+.texto-inicial{
+    padding-top: 8rem;
+}
+.texto-inicial .cont{
+    text-align: center;
+}
+.texto-inicial .cont h1{
+    colot:black;
+    font-size: 2rem;
+}
+
+.cuadricula{
+    padding-top: 8rem;
+    margin-bottom: 8rem;
+}
+.cuadricula .titulo{
+    text-align: center;
+}
+.cuadricula .titulo h2{
+    font-family: Principal;
+    color: black;
+    font-size: 4rem;
+}
+.cuadricula .titulo p{
+    font-size: 1.5rem;
+}
+.cuadricula .cuadro{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.cuadricula .titulo-cuadro{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.cuadricula .titulo-cuadro h3{
+    font-family: Principal;
+    font-size: 2.5rem;
+}
+.cuadricula .cuadro .boton{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cuadricula .cuadro .btn{
+    border: 1px solid black;
+    text-transform: uppercase;
+    background-color: black;
+    color:white;
+    transition: .5s;
+}
+.cuadricula .cuadro .btn:hover{
+    background-color: transparent;
+    color:black;
+}
+.cuadricula .cuadro-img img{
+    width: 90%;
+    height: auto;
+}
+.cuadricula .cuadro-img{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.formulario{
+    padding-bottom: 8rem;
+}
+.formulario .titulo{
+    text-align: center;
+}
+.formulario .titulo h2{
+    font-family: Principal;
+    color:black;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.formulario .form-control, .formulario .form-select {
+    background-color: rgba(0, 0, 0, 0.2);  /* Un blanco con 20% de opacidad */
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Borde suave */
+    color: black; /* Texto blanco */
+    padding: 12px;
+    transition: all 0.5s ease;
+}
+
+.formulario .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.6); /* Placeholder semi-transparente */
+}
+
+
+.formulario button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s;
+    padding: .7rem 3rem;
+    margin-top: 1.2rem;
+}
+
+.formulario button:hover {
+    background-color: transparent;
+    color:black;
+}
+
+/* PRELOADER */
+.loading{
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke; !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100000;
+  clip-path: circle(100% at 50% 50%);
+  transition: clip-path 0.8s ease-in-out;
+}
+.loading img{
+    width: 15% !important;
+}
+.loading2{
+  clip-path: circle(0% at 50% 50%);
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: white transparent white transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

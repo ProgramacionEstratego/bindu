@@ -1,0 +1,1 @@
+document.write('<img src="assets/img/logo.png" class="imagen-carga" alt="Logo Bidu" title="Bindu">');

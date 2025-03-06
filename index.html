@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción breve de la página">
+    <meta name="keywords" content="palabras clave, separadas, por comas">
+    <meta name="author" content="Tu Nombre o Empresa">
+
+    <title>Bindu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- Ícono de la pestaña -->
+</head>
+<body>
+    <!-- LOADING -->
+    <div class="loading" id="loading">
+        <!--<div class="lds-dual-ring"></div>-->
+        <script src="assets/js/logo-carga.js"></script>
+    </div>
+
+    <!-- VIDEO DE FONDO -->
+    <video autoplay muted loop class="video-background">
+        <source src="assets/video/video.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <header>
+        <div class="row">
+            <!-- ESPACIO -->
+            <div class="col-1"></div>
+
+            <!-- CONTENEDOR -->
+            <div class="col-10">
+                <nav class="navbar">
+                    <a class="navbar-brand" href="#">
+                      <img src="assets/img/logo.png" alt="Bindu">
+                    </a>
+                </nav>
+            </div>
+
+            <!-- ESPACIO -->
+            <div class="col-1"></div>
+        </div>                      
+    </header>
+
+    <main>
+        <!-- TEXTO INICIAL -->
+        <div class="texto-inicial">
+            <div class="row">
+                <!-- ESPACIO -->
+                <div class="col-1"></div>
+
+                <!-- CONTENEDOR -->
+                <div class="col-10">
+                    <div class="cont">
+                        <h1>Dale el control a tu intuición y comienza a conectar con personas que vibren como tu. Conoce, explora y siente en nuestros playgrounds de experiencias.<br><br><span>Let the BINDU begin.</span></h1>
+                    </div>
+                </div>
+
+                <!-- ESPACIO -->
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <!-- CUADRICULA -->
+        <div class="cuadricula">
+            <div class="row">
+                <!-- ESPACIO -->
+                <div class="col-1"></div>
+
+                <!-- CONTENEDOR -->
+                <div class="col-10">
+                    <!-- TITULO -->
+                    <div class="titulo mb-5">
+                        <h2>DISCOVER YOURSELF</h2>
+                        <p>New experiences every month</p>
+                    </div>
+
+                    <!-- CUADROS -->
+                    <div class="row">
+                        <!-- ESPACIO -->
+                        <div class="col-2"></div>
+
+                        <!-- CONTENEDOR -->
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-xl-6 cuadro">
+                                    <div class="titulo-cuadro">
+                                        <h3>HI, NEW SUN</h3>
+                                    </div>
+
+                                    <p class="mt-3">Experience</p>
+
+                                    <ul class="bullets mt-2">
+                                        <li>Yoga & Alchemical DJ Set</li>
+                                        <li>Numerología</li>
+                                        <li>Canalizaciones</li>
+                                        <li>Ice momentum</li>
+                                        <li>Mind connection</li>
+                                    </ul>
+
+                                    <div class="boton mt-3">
+                                        <a href="" class="btn">Reserva ahora!</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 cuadro-img">
+                                    <img src="assets/img/vector-01.webp" alt="Bindu">
+                                </div>
+
+                                <div class="col-xl-6 cuadro-img">
+                                    <img src="assets/img/vector-02.webp" alt="Bindu">
+                                </div>
+
+                                <div class="col-xl-6 cuadro-img">
+                                    <img src="assets/img/vector-03.webp" alt="Bindu">
+                                </div>
+
+                                <div class="col-xl-6 cuadro-img">
+                                    <img src="assets/img/vector-04.webp" alt="Bindu">
+                                </div>
+
+                                <div class="col-xl-6 cuadro-img">
+                                    <img src="assets/img/vector-05.webp" alt="Bindu">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ESPACIO -->
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <!-- ESPACIO -->
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="formulario">
+            <div class="row">
+                <!-- ESPACIO -->
+                <div class="col-2"></div>
+
+                <!-- CONTENEDOR -->
+                <div class="col-8">
+                    <div class="titulo">
+                        <h2 class="mb-5">Comienza a conectar</h2>
+                    </div>
+
+                    <form action="procesar_formulario.php" method="POST" class="container mt-4">
+                        <div class="row">
+                            <div class="col-xl-6 form-group">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                            </div>
+
+                            <div class="col-xl-6 form-group mt-xl-0 mt-3">
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" required>
+                            </div>
+
+                            <div class="col-xl-6 form-group mt-3">
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                            </div>
+
+                            <div class="col-xl-6 form-group mt-3">
+                                <select class="form-select" id="conectar" name="conectar" required>
+                                    <option value="" disabled selected>Cómo conectamos?</option>
+                                    <option value="experiencias">Experiencias</option>
+                                    <option value="patrocinios">Patrocinios</option>
+                                    <option value="performance">Performance</option>
+                                    <option value="bolsa">Bolsa de Trabajo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12 form-group mt-3">
+                                <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Talk to me" rows="5" required></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center mt-3">
+                                <button type="submit" class="btn btn-primary">Conectar</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <!-- ESPACIO -->
+                <div class="col-2"></div>
+            </div>
+        </div>                  
+    </main>
+
+    <footer>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+        <div class="row">
+            <!-- ESPACIO -->
+            <div class="col-1"></div>
+
+            <!-- CONTENEDOR -->
+            <div class="col-10">
+                <div class="text-center py-3">
+                    <p>Sitio creado por Estratego Mx&copy; 2025</p>
+                </div>
+            </div>
+
+            <!-- ESPACIO -->
+            <div class="col-1">
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LOADING-->
+    <script defer src="assets/js/loading.js"></script>
+</body>
+</html>
